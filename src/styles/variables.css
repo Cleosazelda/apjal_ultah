@@ -1,0 +1,38 @@
+:root {
+  /* Palette */
+  --maroon-deep: #5a2630;
+  --maroon-soft: #7a3b46;
+  --rose-dusty: #b98289;
+  --blush: #d9aeb3;
+  --cream: #f7f0e8;
+  --beige: #e9ddd2;
+  --brown-dark: #302124;
+
+  /* Semantic */
+  --bg: var(--cream);
+  --bg-alt: var(--beige);
+  --text: var(--brown-dark);
+  --text-soft: #6b5559;
+  --accent: var(--maroon-deep);
+
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  /* Spacing & shape */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Soft, warm shadows (tidak hitam pekat) */
+  --shadow-soft: 0 6px 20px rgba(90, 38, 48, 0.1);
+  --shadow-lift: 0 14px 34px rgba(90, 38, 48, 0.18);
+
+  --maxw: 1080px;
+}

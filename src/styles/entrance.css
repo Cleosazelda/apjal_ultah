@@ -1,0 +1,124 @@
+.entrance {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  background: radial-gradient(ellipse at center, var(--cream) 55%, var(--beige) 100%);
+  overflow: hidden;
+}
+.entrance__stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---- Stage 1 ---- */
+.entrance__catwrap { position: relative; }
+.bubble {
+  position: absolute;
+  top: -8px;
+  right: -34px;
+  background: #fffaf3;
+  padding: 2px 16px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  font-size: 1.5rem;
+  z-index: 5;
+}
+.entrance__whisper { font-size: 1.8rem; margin-top: 12px; }
+.entrance__hint { color: var(--text-soft); margin-top: 2px; }
+.entrance__tap {
+  margin-top: 22px;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rose-dusty);
+}
+
+/* ---- Stage 2: envelope ---- */
+.scene {
+  position: relative;
+  width: min(340px, 90vw);
+  padding-bottom: 90px;
+}
+.scene__card {
+  position: relative;
+  z-index: 2;
+  padding: 28px 22px 84px; /* bawah = ruang yang tertutup amplop */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Tombol harus tampil di atas amplop */
+.scene__card button { position: relative; z-index: 6; }
+.scene__body {
+  position: absolute;
+  z-index: 3;
+  left: 0; right: 0; bottom: 0;
+  height: 140px;
+  background: linear-gradient(180deg, var(--maroon-soft), var(--maroon-deep));
+  border-radius: 6px 6px 14px 14px;
+  box-shadow: var(--shadow-lift);
+  pointer-events: none;
+}
+.scene__flap {
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 140px;           /* tepat di tepi atas badan amplop */
+  height: 74px;
+  background: var(--maroon-soft);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  display: grid;
+  place-items: start center;
+  padding-top: 16px;
+  pointer-events: none;
+}
+.scene__flap { transform-origin: top; bottom: auto; top: auto; }
+.scene__seal { color: var(--blush); font-size: 1.2rem; }
+.scene__input {
+  margin-top: 14px;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--blush);
+  background: var(--cream);
+  color: var(--maroon-deep);
+  font-weight: 500;
+  text-align: center;
+}
+.scene__input:focus { outline: 2px solid var(--rose-dusty); outline-offset: 2px; }
+.scene__msg { min-height: 40px; margin: 8px 0 6px; display: grid; place-items: center; }
+.scene__msg .hand { font-size: 1.25rem; }
+
+/* ---- Stage 3: door ---- */
+.doorscene { display: flex; align-items: flex-end; gap: 10px; }
+.door {
+  position: relative;
+  width: 112px;
+  height: 168px;
+  border-radius: 56px 56px 4px 4px;
+  background: var(--beige);
+  border: 5px solid var(--maroon-soft);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.door__light {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 70%, #fff3df, var(--blush));
+}
+.door__panel {
+  position: absolute; inset: 0;
+  background: var(--maroon-deep);
+  border-radius: 50px 50px 0 0;
+}
+.door__knob {
+  position: absolute;
+  right: 12px; top: 56%;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--blush);
+}
