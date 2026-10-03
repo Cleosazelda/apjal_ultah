@@ -22,7 +22,7 @@ export default function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <MainSite />
+          <MainSite onReplay={() => setUnlocked(false)} />
         </motion.div>
       )}
     </AnimatePresence>

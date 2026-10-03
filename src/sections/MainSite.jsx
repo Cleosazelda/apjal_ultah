@@ -16,7 +16,7 @@ import '../styles/sections.css'
 
 const ids = birthdayData.chapters.map((c) => c.id)
 
-export default function MainSite() {
+export default function MainSite({ onReplay }) {
   const active = useActiveChapter(ids)
 
   return (
@@ -34,6 +34,26 @@ export default function MainSite() {
       <MemoriesSection />
       <HeartSection />
       <BirthdaySection />
+      
+      {onReplay && (
+        <div style={{ textAlign: 'center', padding: '2rem', paddingBottom: '6rem' }}>
+          <button 
+            onClick={onReplay}
+            className="hand"
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--maroon-soft)',
+              fontSize: '1rem',
+              cursor: 'pointer',
+              opacity: 0.7,
+              textDecoration: 'underline'
+            }}
+          >
+            replay opening 🐈
+          </button>
+        </div>
+      )}
     </main>
   )
 }

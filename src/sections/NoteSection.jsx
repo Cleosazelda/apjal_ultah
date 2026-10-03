@@ -17,7 +17,7 @@ export default function NoteSection() {
           className="diary paper"
           initial={{ opacity: 0, y: 40, rotate: -2 }}
           whileInView={{ opacity: 1, y: 0, rotate: -0.6 }}
-          viewport={{ once: true, margin: '-80px' }}
+          viewport={{ once: true }}
           transition={{ duration: 0.9, ease: 'easeOut' }}
         >
           <Tape />

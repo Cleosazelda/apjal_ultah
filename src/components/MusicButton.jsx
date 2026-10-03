@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Music, VolumeX } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { birthdayData } from '../data/birthdayData'
@@ -17,6 +17,14 @@ export default function MusicButton() {
       setPlaying(false) // file belum ada / browser menolak
     }
   }
+
+  useEffect(() => {
+    const a = audio.current
+    if (a) {
+      a.volume = 0.5
+      a.play().then(() => setPlaying(true)).catch(() => setPlaying(false))
+    }
+  }, [])
 
   return (
     <>

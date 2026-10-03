@@ -18,7 +18,7 @@ export const birthdayData = {
     hint: 'kayaknya ini buat kamu deh.',
     beforeTitle: 'Before we let you in...',
     beforeText: 'Aku mau tanya satu hal dulu.',
-    question: 'Kapan pertama kali kita chat?',
+    question: 'First Contact?',
     button: 'Boleh masuk? ♡',
     wrong: 'Hmm... kayaknya kamu lupa awal mula kita. 🐈',
     right: 'Nahhh, kamu inget. ♡',
@@ -39,10 +39,9 @@ export const birthdayData = {
   // ---------- 01 A Little Note ----------
   note: {
     lines: [
-      'Hari ini semuanya tentang kamu.',
-      'Aku pengen bikin sesuatu yang sedikit berbeda buat ulang tahun kamu.',
-      'Jadi aku bikin satu tempat kecil di internet yang isinya beberapa hal tentang kamu, tentang kita, dan sedikit pesan dari aku.',
-      'Semoga kamu menikmati setiap bagian kecilnya. ♡',
+      'I wanted to make something a little different for your birthday.',
+      'So, I made this little corner of the internet filled with a few things about you, about us, and a little message from me.',
+      'I hope you enjoy every little part of it. ♡',
     ],
     signature: 'With love, Cleosa',
   },
@@ -50,8 +49,21 @@ export const birthdayData = {
   // ---------- 02 Things That Make Afzaal Happy ----------
   happyCards: [
     {
-      id: 'game',
+      id: 'Me',
       no: '01',
+      emoji: '🫶🏻',
+      title: 'Me :P',
+      photo: '/images/memories/us.jpg',
+      joke: 'maybe?',
+      lines: [
+        'Pasti kamu happy kan kalo ketemu aku.',
+        'HEHEHEH maaf pede, bercanda aja. Aku kan kalah sama persib',
+      ],
+      easterEgg: '😭😭😭',
+    },
+    {
+      id: 'game',
+      no: '02',
       emoji: '🎮',
       title: 'Valorant & Games',
       photo: '/images/memories/game.jpg',
@@ -59,7 +71,7 @@ export const birthdayData = {
         'Kalau ada waktu senggang, pelariannya pasti ke game.',
         'Entah Valorant atau game lainnya, yang penting main dulu.',
       ],
-      joke: '"Aku cuma main sebentar kok."',
+      joke: '"Lagi apa?" "Main valo."',
       jokeBy: '— famous last words.',
       easterEgg: 'Valorant lagi? 😭',
     },
@@ -98,6 +110,13 @@ export const birthdayData = {
       'Kalau bisa yaa...',
       'jangan minta yang aneh-aneh. 🤨',
     ],
+    // Label untuk setiap input wish (ganti kalau mau)
+    labels: [
+      'Wish 1',
+      'Wish 2',
+      'Wish 3',
+      'Wish 4♡',
+    ],
     count: 4,
     button: 'KIRIM WISH AKU ♡',
     success: 'Oke... aku terima 4 permintaan kamu. 👀',
@@ -108,34 +127,36 @@ export const birthdayData = {
   date: {
     title: 'Tomorrow, just us ♡',
     dateLabel: '03 October 2026',
-    dressCode: 'Dress code: maroon ❤️',
+    dressCode: 'Dress code: maroon (kesukaan kamu)',
     outfit: {
       heading: 'Outfit check',
       note: 'Atasan: maroon (wajib). Bawahan: bebas, asal jangan aneh-aneh.',
       pickLabel: 'pilih bawahannya:',
       bottoms: [
-        { key: 'cream', label: 'Cream', color: '#e9ddd2', reply: 'Cream + maroon? Cakep. Aman. ✨' },
-        { key: 'charcoal', label: 'Hitam', color: '#3a3033', reply: 'Klasik. Maroon dan hitam nggak pernah salah. 🖤' },
-        { key: 'brown', label: 'Coklat', color: '#8a6a58', reply: 'Warm tone semua, kita jadi satu palet. 🤎' },
-        { key: 'persib', label: 'Biru', color: '#3f5f9a', reply: 'Biru Persib?? Berani ya... tapi boleh deh. 💙' },
+        { key: 'jeans', label: 'Jeans', color: '#4a6fa5', reply: 'Casual vibes! Maroon + jeans combo yang timeless. 👖' },
+        { key: 'cargo', label: 'Cargo', color: '#4a5a4a', reply: 'Keren! Cargo bikin look kamu makin asik. 🖤' },
+        { key: 'chino', label: 'Chino', color: '#c2b28f', reply: 'Rapi dan cakep! Chino emang ga pernah salah. ✨' },
+        { key: 'hitam', label: 'Celana hitam', color: '#222222', reply: 'Klasik. Maroon dan hitam itu pasangan serasi. 🖤' },
+        { key: 'short', label: 'Short pants', color: '#8a6a58', reply: 'Santai banget. Cocok buat jalan-jalan chill. 🤎' },
+        { key: 'bebas', label: 'Bebas, kamu pilih aja 🤨', color: '#cccccc', reply: 'Yeee terserah kamu deh, pokoknya harus cakep! 👀' },
       ],
     },
     stops: [
       { id: 's1', time: '06:00', title: 'The mission begins', emoji: '🌤️', text: ['Bangun pagi, siap-siap, terus izin Mama.'] },
-      { id: 's2', time: '07:30', title: 'Come pick me up', emoji: '🚗', text: ['Estimasi kamu sampai dan jemput aku.', 'Jangan telat. Aku tunggu. ♡'] },
-      { id: 's3', time: '08:00-ish', title: 'First stop: sarapan', emoji: '🥐', text: ['Kita mulai hari dengan makan dulu.'] },
-      { id: 's4', time: '10:00-ish', title: 'Second stop: café cantik', emoji: '☕', text: ['Cari tempat yang cantik, cozy, dan tentunya enak buat foto-foto.'] },
+      { id: 's2', time: '07:30', title: 'Come pick me up', emoji: '🚗', text: ['Estimasi kamu sampai dan jemput aku.', 'tapi kalo aku ngantuk undur dikit ya hehe ♡'] },
+      { id: 's3', time: '08:00-ish', title: 'First stop: sarapan', emoji: '🥐', text: ['Sarapan dulu biar ga masuk ugd.'] },
+      { id: 's4', time: '10:00-ish', title: 'Second stop: café cantik', emoji: '☕', text: ['For celebrate ur birthday sayangg!'] },
       {
         id: 's5', time: '13:00-ish', title: 'Third stop: you decide', emoji: '🎲',
-        text: ['Mau makan lagi? Mau jalan-jalan? Mau main?', 'Bebas. Yang penting sama aku. ♡'],
+        text: ['Mau makan lagi? Mau jalan-jalan? Mau main? Atau....', 'Bebas. Yang penting sama aku. ♡'],
         options: [
           { key: 'eat', label: 'EAT', reply: 'Anak pecinta kuliner. Tentu saja. 🍜' },
           { key: 'play', label: 'PLAY', reply: 'Oke, tapi jangan sampai lupa waktu ya. 🎮' },
           { key: 'explore', label: 'EXPLORE', reply: 'Siap, kita nyasar bareng-bareng. 🗺️' },
         ],
       },
-      { id: 's6', time: '17:00-ish', title: 'Fourth stop: rumah', emoji: '🏠', text: ['Setelah seharian jalan, waktunya pulang ke rumah aku.'] },
-      { id: 's7', time: 'Night', title: 'The last stop', emoji: '🌙', sub: 'Sleep Call', text: ['Walaupun date-nya selesai... kamu tetap belum bisa kabur dari aku.'] },
+      { id: 's6', time: '17:00-ish', title: 'Fourth stop: rumah', emoji: '🏠', text: ['Pulang ke rumah akuuu! ngobrol ngobrol sm my keluarga yaa'] },
+      { id: 's7', time: 'Night', title: 'The last stop', emoji: '🌙', sub: 'Sleep Call', text: ['Kalo bisa nginep aja sih hehehehe.'] },
     ],
   },
 
@@ -143,28 +164,30 @@ export const birthdayData = {
   // category: 'dates' | 'silly' | 'food' | 'favorites'  (boleh lebih dari satu)
   // Taruh foto di public/images/memories/ lalu ganti nama file di sini
   memories: [
-    { id: 'm1', src: '/images/memories/01.jpg', caption: 'first date vibes', categories: ['dates', 'favorites'], rotate: -3 },
-    { id: 'm2', src: '/images/memories/02.jpg', caption: 'muka kamu pas aku foto diam-diam', categories: ['silly'], rotate: 2 },
-    { id: 'm3', src: '/images/memories/03.jpg', caption: 'hunting makanan lagi', categories: ['food', 'dates'], rotate: -1.5 },
-    { id: 'm4', src: '/images/memories/04.jpg', caption: 'favorit aku', categories: ['favorites'], rotate: 3 },
-    { id: 'm5', src: '/images/memories/05.jpg', caption: 'random tapi lucu', categories: ['silly'], rotate: -2.5 },
-    { id: 'm6', src: '/images/memories/06.jpg', caption: 'enak banget ini', categories: ['food'], rotate: 1.5 },
-    { id: 'm7', src: '/images/memories/07.jpg', caption: 'just us', categories: ['dates', 'favorites'], rotate: -2 },
-    { id: 'm8', src: '/images/memories/08.jpg', caption: 'kamu lagi ngantuk', categories: ['silly'], rotate: 2.5 },
+    { id: 'm1', src: '/images/memories/01.jpg', caption: 'first meet', categories: ['dates', 'favorites'], rotate: -3 },
+    { id: 'm2', src: '/images/memories/02.jpg', caption: 'canggung bgt jujur', categories: ['silly', 'dates'], rotate: 2 },
+    { id: 'm3', src: '/images/memories/03.jpg', caption: 'jadian niii', categories: ['favorites', 'dates'], rotate: -1.5 },
+    { id: 'm4', src: '/images/memories/04.jpg', caption: 'kamunya gemes', categories: ['favorites', 'silly', 'dates'], rotate: 3 },
+    { id: 'm5', src: '/images/memories/05.jpg', caption: 'kulineran lagi yuk', categories: ['dates', 'food'], rotate: -2.5 },
+    { id: 'm6', src: '/images/memories/06.jpg', caption: 'couple ootd', categories: ['dates'], rotate: 1.5 },
+    { id: 'm7', src: '/images/memories/07.jpg', caption: 'ikea date', categories: ['dates', 'favorites'], rotate: -2 },
+    { id: 'm8', src: '/images/memories/08.jpg', caption: 'ganteng bangett', categories: ['favorites'], rotate: 2.5 },
+    { id: 'm8', src: '/images/memories/09.jpg', caption: 'gas burtok lagi', categories: ['silly', 'food'], rotate: 3 },
+    { id: 'm8', src: '/images/memories/10.jpg', caption: 'seru bgt, next dufan', categories: ['date', 'favorites'], rotate: -1 },
   ],
 
   // ---------- 06 Letter (EDIT, ini draft!) ----------
   letter: {
     to: 'Untuk Afzaal,',
     paragraphs: [
-      'Selamat ulang tahun, sayang. Akhirnya sampai juga di hari ini.',
-      'Aku nggak pandai ngomong yang panjang-panjang, jadi aku tulis di sini. Terima kasih sudah jadi orang yang sabar ngadepin aku, yang tetap ada walaupun aku kadang rewel dan manja.',
-      'Aku suka cara kamu ketawa pas lagi main game, cara kamu semangat banget pas Persib menang, dan cara kamu diam-diam perhatian tanpa pernah bilang. [GANTI: tambahkan hal-hal spesifik tentang dia]',
-      'Aku nggak janji bisa jadi sempurna. Tapi aku janji akan terus ada, nemenin kamu, dan jadi tempat pulang yang nyaman.',
-      'Semoga umur baru ini baik ke kamu. Semoga kamu selalu sehat dan bahagia, dan semoga mimpi-mimpi kamu pelan-pelan jadi nyata.',
+      'Selamat ulang tahun, sayang. Akhirnya kamu jadi om om 22 tahun.',
+      'Aku ga jago ngomong yang panjang-panjang, jadi aku tulis di sini. Makasih ya sayang udah jadi orang yang sabar ngadepin aku, yang tetap ada dan selalu treat aku dengan baik walaupun aku kadang suka marah-marah dan manja.',
+      'Semoga di umur 22 tahun ini menjadi tahun yang membuat kamu bahagia (apalagi ada aku hehe), makin dewasa, kurangi ovt ke akunya, tetep jadi afzaal yang baik dan semoga kamu dapetin pekerjaan yang bisa balance sama kehidupan kamu ya, jujur aku sedih liat kamu overwork sampe kecapean... tapi sehat selalu ya sayangku',
+      'Aku ga janji bisa jadi sempurna. Tapi aku bakal terus ada, nemenin kamu, dan jadi tempat pulang yang nyaman (semoga kamu jadiin aku rumah ya).',
+      'Semoga umur baru ini baik ke kamu. Semoga kamu selalu sehat dan bahagia, dan semoga mimpi-mimpi kamu pelan-pelan jadi nyata. Aku beruntung banget punya kamu di hidup aku. Inget yaa aku cuma sayang kamu, jangan mikir aneh-aneh lagi! LOVE U SAYANG',
     ],
     closing: 'Always yours,',
-    signature: 'Cleosa',
+    signature: 'Cleosa Zelda A',
   },
 
   // ---------- 07 Finale ----------
@@ -183,12 +206,23 @@ export const birthdayData = {
     signature: '— Cleosa',
   },
 
+  // ---------- Notifikasi (ntfy.sh) ----------
+  // Cara setup:
+  //   1. Install app "ntfy" di HP kamu (Android/iOS) dari ntfy.sh
+  //   2. Buka app → Subscribe to topic → ketik topic kamu di bawah
+  //   3. Set enabled: true
+  // Setelah itu kamu bakal dapet notif tiap kali Afzaal kirim wish atau pilih outfit!
+  notification: {
+    ntfyTopic: '',   // ← isi dengan nama unik, contoh: 'cleosa-afzaal-secret-2026'
+    enabled: false,  // ← ganti jadi true kalau ntfyTopic sudah diisi
+  },
+
   // ---------- Easter eggs ----------
   secrets: [
     { id: 'star1', message: 'Ternyata kamu nemu bintang kecilnya. Aku sayang kamu. ✨' },
     { id: 'heart1', message: 'Psst, jangan bilang siapa-siapa: kamu orang favorit aku. ♡' },
   ],
-    // ---------- Komentar kucing yang ngintip tiap ganti chapter ----------
+  // ---------- Komentar kucing yang ngintip tiap ganti chapter ----------
   catTips: {
     note: 'psst, baca pelan-pelan ya.',
     happy: 'kartunya bisa dibalik lho.',
@@ -198,7 +232,7 @@ export const birthdayData = {
     heart: 'ada surat buat kamu.',
     birthday: 'sebentar lagi...',
   },
-  
+
   // ---------- Musik (opsional): taruh file di public/music/song.mp3 ----------
   music: { src: '/music/song.mp3', label: 'musik' },
 }
