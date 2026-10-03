@@ -18,7 +18,7 @@ export const birthdayData = {
     hint: 'kayaknya ini buat kamu deh.',
     beforeTitle: 'Before we let you in...',
     beforeText: 'Aku mau tanya satu hal dulu.',
-    question: 'First Contact?',
+    question: 'First Chat?',
     button: 'Boleh masuk? ♡',
     wrong: 'Hmm... kayaknya kamu lupa awal mula kita. 🐈',
     right: 'Nahhh, kamu inget. ♡',
