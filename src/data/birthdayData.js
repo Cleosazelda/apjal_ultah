@@ -77,7 +77,7 @@ export const birthdayData = {
     },
     {
       id: 'persib',
-      no: '02',
+      no: '03',
       emoji: '💙',
       title: 'Persib',
       photo: '/images/memories/persib.jpg',
@@ -90,7 +90,7 @@ export const birthdayData = {
     },
     {
       id: 'food',
-      no: '03',
+      no: '04',
       emoji: '🍜',
       title: 'Kuliner',
       photo: '/images/food/food.jpg',
@@ -105,7 +105,7 @@ export const birthdayData = {
   // YAY ---------- 03 Wishes ----------
   wishes: {
     lines: [
-      'Kalau 3 hal tadi masih belum cukup bikin kamu happy di hari ulang tahun kamu...',
+      'Kalau 4 hal tadi masih belum cukup bikin kamu happy di hari ulang tahun kamu...',
       'coba bilang 4 hal yang kamu mau.',
       'Nanti aku usahain buat ngabulin satu-satu.',
       'Kalau bisa yaa...',
