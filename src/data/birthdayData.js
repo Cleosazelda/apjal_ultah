@@ -101,7 +101,8 @@ export const birthdayData = {
     },
   ],
 
-  // ---------- 03 Wishes ----------
+
+  // YAY ---------- 03 Wishes ----------
   wishes: {
     lines: [
       'Kalau 3 hal tadi masih belum cukup bikin kamu happy di hari ulang tahun kamu...',
